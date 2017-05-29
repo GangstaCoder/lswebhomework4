@@ -19,7 +19,7 @@
 </ul> 
 2. Create a new `img` element and set its src attribute to a picture of you. Append that element to the page.*/
 document.getElementById("blue").style.color = "blue";
-document.body.style.backgroundColor = "red";
+document.body.style.backgroundColor = "lime";
 document.getElementById("blue").innerHTML = "whatever we want"
 document.body.style.fontFamily = "Helvetica, sans-serif";
 document.body.style.fontStyle = "italic";
@@ -27,21 +27,18 @@ document.getElementById("nickname").innerHTML = "Elbonzorino";
 document.getElementById("favorites").innerHTML = "lime";
 document.getElementById('hometown').innerHTML = "Manzini";
 
-function myFunction() {
-    for (i = 0; i < 2; i++){
-    var list = document.getElementsByTagName("ul");getElementById("");
-    list.getElementById("").appendChild = "listitem";
-    list.getElementById("listitem").style.color = "red";
-}};
+var list= document.getElementsByTagName("li");
 
+for(i=0; i<list.length;i++){
+  list[i].className="listitem";
+};
 
-/*function myFunction() {
-    for (i = 0; i < 2; i++){
-    var list = document.getElementsByTagName("span");
-    list.getElementsById("").innerHTML = "listitem";
-    document.getElementById("listitem").style.color = "red";
-}};
-*/
+var classlist= document.querySelectorAll(".listitem");
+
+for(i=0;i<classlist.length;i++){
+  classlist[i].style.color="red";
+};
+
 
 var x = document.createElement("IMG");
 x.setAttribute("src", "truck.jpg");
