@@ -13,3 +13,19 @@
 
 1. Iterate through each li and change the class to "listitem". Add a style tag that sets a rule for "listitem" to make the color red.
 2. Create a new `img` element and set its src attribute to a picture of you. Append that element to the page.*/
+document.getElementById("blue").style.color = "blue";
+document.body.style.backgroundColor = "red";
+document.getElementById("blue").innerHTML = "whatever we want"
+document.body.style.fontFamily = "Helvetica, sans-serif";
+document.body.style.fontStyle = "italic";
+document.getElementById("nickname").innerHTML = "Elbonzorino";
+document.getElementById("favorites").innerHTML = "lime";
+document.getElementById('hometown').innerHTML = "Manzini";
+
+
+
+var x = document.createElement("IMG");
+x.setAttribute("src", "truck.jpg");
+x.setAttribute("width", "304");
+x.setAttribute("height", "228");
+document.body.appendChild(x);
